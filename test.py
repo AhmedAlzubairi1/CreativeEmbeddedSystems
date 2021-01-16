@@ -1,4 +1,4 @@
-# importing requests and json
+#importing requests and json
 import requests, json, pyowm
 # base URL
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
