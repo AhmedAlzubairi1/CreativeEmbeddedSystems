@@ -47,18 +47,6 @@ print('22222')
 print(dir(owm))
 mgr = owm.weather_manager()
 one_call = mgr.one_call(lat=40.7128, lon=74.0060)
-print(dir(one_call))
-print(one_call.forecast_daily)
-
-print('chec'*10)
-print(dir(one_call.forecast_hourly[0]))
-print(one_call.forecast_hourly[0].status)
-print(dir(one_call.forecast_hourly[0].reference_time))
-word=str(one_call.forecast_hourly[0].reference_time)
-word=word[word.find('reference_time='):]
-word=word[word.find('='):]
-day=word[9:11]
-print(day)
 
 current_day_weather=str(one_call.forecast_hourly[0].reference_time)
 today_date=current_day_weather[current_day_weather.find('reference_time='):]
